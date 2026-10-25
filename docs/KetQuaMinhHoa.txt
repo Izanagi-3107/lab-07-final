@@ -1,0 +1,20 @@
+=== MINH HOA LAB W07 ===
+Ngô Ngọc Thái - 202418984
+PR01  | Dieu khien may chieu 1 | Available        | Tu A | Ready=False | Score=15
+PR02  | Dieu khien may chieu 2 | Available        | Tu A | Ready=True | Score=60
+PR03  | Dieu khien may chieu 3 | Available        | Tu A | Ready=True | Score=90
+AC01  | Dieu khien dieu hoa 1  | Available        | Tu B | Ready=True | Score=100
+AC02  | Dieu khien dieu hoa 2  | Available        | Tu B | Ready=True | Score=100
+MC01  | Micro 1                | Available        | Tu C | Ready=False | Score=50
+MC02  | Micro 2                | Available        | Tu C | Ready=True | Score=57.5
+MC03  | Micro 3                | Available        | Tu C | Ready=True | Score=92.5
+Trung ma: Ma PR01 da ton tai.
+Tim PR02: Dieu khien may chieu 2
+May chieu san sang: PR02, PR03
+Pin cao nhat: PR03, Borrowed
+Phong A203: AC02, Borrowed
+Micro dau tien: MC02, Borrowed
+Tra MC02: Available
+Doi sang diem cao nhat: MC03, Borrowed
+Phong A999: Khong co thiet bi phu hop de cap phat.
+Tra PR03: Available

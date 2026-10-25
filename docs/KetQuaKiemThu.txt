@@ -1,0 +1,36 @@
+KIEM THU LAB W07 - Ngô Ngọc Thái - 202418984
+PASS | 01 Them du 3 may chieu, 2 dieu hoa, 3 micro
+PASS | 02 Trung ma phat sinh DuplicateIdException
+PASS | 03 Tim theo ma va ma khong ton tai
+PASS | 04 Loc thiet bi san sang
+PASS | 05 May chieu diem cao nhat la PR03
+PASS | 06 Dieu hoa cho phong A203 la AC02
+PASS | 07 Micro dau tien san sang la MC02
+PASS | 08 Doi chien luoc tren cung tap ung vien
+PASS | 09 Khong co ung vien va kho giu nguyen
+PASS | 10 Cap phat cap nhat Borrowed trong kho
+PASS | 11 Cung repository generic cho nhieu loai
+PASS | 12 Tra thiet bi va muon lai
+PASS | 13 Muon thiet bi pin thap
+PASS | 14 Muon lap va tra lap
+PASS | 15 Bao tri va ket thuc bao tri
+PASS | 16 Nguong pin may chieu 19 va 20
+PASS | 17 Nguong micro 29 30 va 39 40
+PASS | 18 Diem micro khong bi chia nguyen
+PASS | 19 Tu choi pin va tin hieu ngoai 0 den 100
+PASS | 20 Tu choi chuoi trong va chuan hoa khoang trang
+PASS | 21 Repository tu choi null
+PASS | 22 Xoa ton tai va khong ton tai
+PASS | 23 GetAll khong lo collection noi bo
+PASS | 24 FindAll bao ve collection va tu choi null
+PASS | 25 Hai chien luoc deu bao loi danh sach rong
+PASS | 26 Hoa diem giu phan tu dau va khong sua dau vao
+PASS | 27 Tu choi cac dependency null
+PASS | 28 Phong tuong thich khong bi sua tu ben ngoai
+PASS | 29 Khong cap phat lai thiet bi dang muon
+PASS | 30 Chi loc dieu kien bo sung sau khi san sang
+PASS | 31 Loi predicate khong lam muon thiet bi
+PASS | 32 Kho rong va ma khong hop le
+PASS | 33 Bao tri sai trang thai khong doi du lieu
+PASS | 34 Da hinh hanh vi va diem qua TeachingDevice
+TONG KET: 34 PASS, 0 FAIL

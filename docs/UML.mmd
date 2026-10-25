@@ -1,0 +1,74 @@
+classDiagram
+    class IIdentifiable {
+        <<interface>>
+        +string Id
+    }
+    class TeachingDevice {
+        <<abstract>>
+        +string Id
+        +string Name
+        +string StorageLocation
+        +DeviceStatus Status
+        +IsReadyForUse() bool
+        +GetDefaultPriorityScore() double
+        +Borrow() void
+        +Return() void
+        +StartMaintenance() void
+        +FinishMaintenance() void
+    }
+    class ProjectorRemote {
+        +int BatteryLevel
+        +IsReadyForUse() bool
+        +GetDefaultPriorityScore() double
+    }
+    class AirConditionerRemote {
+        +IReadOnlySet~string~ CompatibleRooms
+        +IsCompatibleWith(roomId) bool
+        +IsReadyForUse() bool
+        +GetDefaultPriorityScore() double
+    }
+    class WirelessMicrophone {
+        +int BatteryLevel
+        +int SignalQuality
+        +IsReadyForUse() bool
+        +GetDefaultPriorityScore() double
+    }
+    class IRepository~T~ {
+        <<interface>>
+        +Add(T item) void
+        +Remove(string id) bool
+        +FindById(string id) T
+        +GetAll() IReadOnlyList~T~
+        +FindAll(condition) IReadOnlyList~T~
+    }
+    class InMemoryRepository~T~ {
+        -List~T~ items
+    }
+    class ISelectionStrategy~T~ {
+        <<interface>>
+        +Select(candidates) T
+    }
+    class HighestPriorityStrategy~T~ {
+        -scoreSelector
+        +Select(candidates) T
+    }
+    class FirstAvailableStrategy~T~ {
+        +Select(candidates) T
+    }
+    class AllocationService~T~ {
+        -IRepository~T~ repository
+        -ISelectionStrategy~T~ strategy
+        +ChangeStrategy(newStrategy) void
+        +Allocate(additionalCondition) T
+    }
+    IIdentifiable <|.. TeachingDevice
+    TeachingDevice <|-- ProjectorRemote
+    TeachingDevice <|-- AirConditionerRemote
+    TeachingDevice <|-- WirelessMicrophone
+    IRepository~T~ <|.. InMemoryRepository~T~
+    ISelectionStrategy~T~ <|.. HighestPriorityStrategy~T~
+    ISelectionStrategy~T~ <|.. FirstAvailableStrategy~T~
+    AllocationService~T~ --> IRepository~T~ : repository
+    AllocationService~T~ --> ISelectionStrategy~T~ : strategy
+    AllocationService~T~ ..> TeachingDevice : T inherits
+    InMemoryRepository~T~ ..> IIdentifiable : T implements
